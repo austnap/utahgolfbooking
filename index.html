@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utah Golf</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+    .expand-all-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Utah Tee Times</h1>
+  </header>
+  <main>
+    <div class="expand-all-container">
+      <button onclick="expandAll()">Expand All</button>
+    </div>
+    <section>
+      <div class="iframe-container">
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Eaglewood</h2>
+          <h3>North Salt Lake, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://www.chronogolf.com/club/eaglewood-golf-course" title="Eaglewood" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Rose Park</h2>
+          <h3>Salt Lake City, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://www.chronogolf.com/club/rose-park-golf-course" title="Rose Park" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Glendale</h2>
+          <h3>Salt Lake City, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://www.chronogolf.com/club/glendale-golf-course" title="Glendale" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Bonneville</h2>
+          <h3>Salt Lake City, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://www.chronogolf.com/club/bonneville-golf-course" title="Bonneville" width="600" height="400" style="display: none;"></iframe>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="iframe-container">
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Mountain View</h2>
+          <h3>West Jordan, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://www.chronogolf.com/club/mountain-view-slco" title="Mountain View" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Glenmoor</h2>
+          <h3>South Jordan, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://glenmoor.cps.golf/onlineresweb/search-teetime?TeeOffTimeMin=0&TeeOffTimeMax=23.999722222222225" title="Glenmoor" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Old Mill</h2>
+          <h3>Sandy, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://www.chronogolf.com/club/old-mill-slco" title="Old Mill" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">River Oaks</h2>
+          <h3>Sandy, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://www.chronogolf.com/club/river-oaks-golf-course-utah" title="River Oaks" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">South Mountain</h2>
+          <h3>Draper, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://www.chronogolf.com/club/south-mountain-slco" title="South Mountain" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Meadow Brook</h2>
+          <h3>Taylorsville, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://www.chronogolf.com/club/meadow-brook-slco" title="Meadow Brook" width="600" height="400" style="display: none;"></iframe>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="iframe-container">
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Murray Parkway</h2>
+          <h3>Murray, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://foreupsoftware.com/index.php/booking/6263/244#teetimes" title="Murray Parkway" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">The Ranches</h2>
+          <h3>Lehi, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://foreupsoftware.com/index.php/booking/19613/1934?_gl=1*42jxdc*_ga*MjEwMjU1NTY4My4xNzE4MzQ2Mzkz*_ga_WQPLP348DP*MTcxODM0NjM5Mi4xLjEuMTcxODM0NjQxMy4wLjAuMA..*_ga_4WFF9V9VMN*MTcxODM0NjM5Mi4xLjEuMTcxODM0NjQxMy4zOS4wLjA.#/teetimes" title="The Ranches" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Thanksgiving Point</h2>
+          <h3>Lehi, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://foreupsoftware.com/index.php/booking/19645#/teetimes" title="Thanksgiving Point" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Talon's Cove</h2>
+          <h3>Saratoga Springs, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://foreupsoftware.com/index.php/booking/19027/788#/teetimes" title="Talon's Cove" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Fox Hollow</h2>
+          <h3>American Fork, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://foreupsoftware.com/index.php/booking/22037/9672#teetimes" title="Fox Hollow" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Lakeside</h2>
+          <h3>West Bountiful, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://www.chronogolf.com/club/lakeside-golf-course-utah-west-bountiful" title="Lakeside" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Cedar Hills</h2>
+          <h3>Cedar Hills, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://app.membersports.com/tee-times/15381/18891/0" title="Cedar Hills" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Sleepy Ridge</h2>
+          <h3>Orem, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://foreupsoftware.com/index.php/booking/19396/1726#teetimes" title="Sleepy Ridge" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Timpanogos</h2>
+          <h3>Provo, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://foreupsoftware.com/index.php/booking/6279/49#teetimes" title="Timpanogos" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Hobble Creek</h2>
+          <h3>Springville, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://foreupsoftware.com/index.php/booking/index/18896#teetimes" title="Hobble Creek" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Spanish Oaks</h2>
+          <h3>Spanish Fork, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://www.theoaksatsf.com/book_tee_time/index.php" title="Spanish Oaks" width="600" height="400" style="display: none;"></iframe>
+        </div>
+        <div class="iframe-box">
+          <h2 onclick="toggleIframe(this)">Gladstan</h2>
+          <h3>Payson, UT</h3>
+          <button onclick="expandIframe(this)">Expand</button>
+          <button onclick="collapseIframe(this)" style="display: none;">Collapse</button>
+          <iframe src="https://foreupsoftware.com/index.php/booking/index/18922#/teetimes" title="Gladstan" width="600" height="400" style="display: none;"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h2>© Austin Napierski</h2>
+  </footer>
+
+<script>
+    function expandIframe(button) {
+      const iframe = button.nextElementSibling.nextElementSibling;
+      iframe.style.width = "75%";
+      iframe.style.height = "600px";
+      iframe.style.display = "block";
+      button.style.display = "none";
+      button.nextElementSibling.style.display = "inline";
+    }
+
+    function collapseIframe(button) {
+      const iframe = button.nextElementSibling;
+      iframe.style.width = "600px";
+      iframe.style.height = "400px";
+      iframe.style.display = "none";
+      button.style.display = "none";
+      button.previousElementSibling.style.display = "inline";
+    }
+
+    function expandAll() {
+      const iframes = document.querySelectorAll('iframe');
+      const expandButtons = document.querySelectorAll('button[onclick="expandIframe(this)"]');
+      const collapseButtons = document.querySelectorAll('button[onclick="collapseIframe(this)"]');
+      
+      iframes.forEach((iframe) => {
+        iframe.style.width = '75%';
+        iframe.style.height = '600px';
+        iframe.style.display = 'block';
+      });
+      
+      expandButtons.forEach((button) => {
+        button.style.display = 'none';
+      });
+      
+      collapseButtons.forEach((button) => {
+        button.style.display = 'inline';
+      });
+    }
+  </script>
+</body>
+</html>
